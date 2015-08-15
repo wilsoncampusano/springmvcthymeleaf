@@ -1,5 +1,6 @@
 package com.wilcage.stockapplabpp;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -9,8 +10,12 @@ import java.io.Serializable;
  * Time: 11:21 AM
  * To change this template use File | Settings | File Templates.
  */
+@Entity
+@Table(name = "products")
 public class Product implements Serializable{
+    @Id
     private String description;
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private double price;
 
     public String getDescription() {
