@@ -1,5 +1,7 @@
 package com.wilcage.stockapplabpp;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
 /**
@@ -9,6 +11,7 @@ import java.util.List;
  * Time: 11:23 AM
  * To change this template use File | Settings | File Templates.
  */
+@Component
 public class SimpleProductManager implements ProductManager{
     private List<Product> products ;
 
