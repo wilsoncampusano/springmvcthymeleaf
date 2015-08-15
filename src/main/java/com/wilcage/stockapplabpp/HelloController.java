@@ -6,6 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,8 +23,11 @@ public class HelloController {
 
     @RequestMapping("/hello.html")
     public ModelAndView handleRequest(HttpServletRequest request , HttpServletResponse response){
-        logger.info("Running hello world");
+        String now = new Date().toString();
 
-        return new ModelAndView("hello.jsp");
+        logger.info("Running hello world : "+now);
+
+        ModelAndView modelAndView = new ModelAndView("hello", "nowDate",now);
+        return modelAndView;
     }
 }

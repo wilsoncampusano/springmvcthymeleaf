@@ -36,6 +36,17 @@
           <version>${servlet.version}</version>
       </dependency>
 
+      <dependency>
+          <artifactId>jstl</artifactId>
+          <groupId>jstl</groupId>
+          <version>1.2</version>
+      </dependency>
+
+      <dependency>
+          <artifactId>standard</artifactId>
+          <groupId>taglibs</groupId>
+          <version>1.1.2</version>
+      </dependency>
 
       <dependency>
       <groupId>junit</groupId>
