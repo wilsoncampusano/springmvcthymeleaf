@@ -24,8 +24,6 @@ public class SimpleProductManager implements ProductManager{
                 product.setPrice(newPrice);
             });
         }
-
-        //TODO:IMPLEMENTAR
     }
 
     @Override
