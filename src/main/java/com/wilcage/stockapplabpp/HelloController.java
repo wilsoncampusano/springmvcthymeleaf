@@ -20,7 +20,7 @@ public class HelloController {
 
     protected final StockLogger logger = StockLogger.getLogger(this.getClass());
 
-    @RequestMapping("/")
+    @RequestMapping("/hello.html")
     public ModelAndView handleRequest(HttpServletRequest request , HttpServletResponse response){
         logger.info("Running hello world");
 

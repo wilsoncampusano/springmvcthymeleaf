@@ -1,5 +1,5 @@
 import com.wilcage.stockapplabpp.HelloController;
-import junit.framework.Assert;
+import org.junit.*;
 import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
 

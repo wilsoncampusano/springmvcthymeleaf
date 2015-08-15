@@ -36,8 +36,6 @@ public class StockLogger {
     }
 
     static StockLogger getLogger(Class clazz){
-
-
-           return new StockLogger(LogFactory.getLog(clazz));
+        return new StockLogger(LogFactory.getLog(clazz));
     }
 }
